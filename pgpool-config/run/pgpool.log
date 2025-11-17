@@ -1,0 +1,8 @@
+2025-11-17 15:42:15: pid 63105: LOG:  Backend status file /tmp/pgpool_status does not exist
+2025-11-17 15:42:15: pid 63105: LOG:  health_check_stats_shared_memory_size: requested size: 12288
+2025-11-17 15:42:15: pid 63105: LOG:  memory cache initialized
+2025-11-17 15:42:15: pid 63105: DETAIL:  memcache blocks :8
+2025-11-17 15:42:15: pid 63105: LOG:  allocating (17246128) bytes of shared memory segment
+2025-11-17 15:42:15: pid 63105: LOG:  allocating shared memory segment of size: 17246128 
+2025-11-17 15:42:15: pid 63105: FATAL:  could not create shared memory for request size: 17246128
+2025-11-17 15:42:15: pid 63105: DETAIL:  shared memory creation failed with error "Invalid argument"

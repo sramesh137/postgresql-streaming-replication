@@ -1,0 +1,6 @@
+# pool_passwd - Password file for Pgpool-II
+# Format for plaintext (AES encrypted recommended, but using plain for demo):
+# username:AES<encrypted> or username:password
+
+# PostgreSQL user - using plaintext for demo
+postgres:postgres_password

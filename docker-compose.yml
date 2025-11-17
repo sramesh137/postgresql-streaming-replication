@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  postgres-primary:
+    image: postgres:15
+    container_name: postgres-primary
+    hostname: postgres-primary
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - primary-data:/var/lib/postgresql/data
+      - ./primary/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./primary/pg_hba.conf:/etc/postgresql/pg_hba.conf
+    command: >
+      postgres
+      -c wal_level=replica
+      -c hot_standby=on
+      -c max_wal_senders=10
+      -c max_replication_slots=10
+      -c wal_keep_size=1GB
+      -c synchronous_commit=off
+      -c hba_file=/etc/postgresql/pg_hba.conf
+    networks:
+      - postgres-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-standby:
+    image: postgres:15
+    container_name: postgres-standby
+    hostname: postgres-standby
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - standby-data:/var/lib/postgresql/data
+    depends_on:
+      postgres-primary:
+        condition: service_healthy
+    networks:
+      - postgres-network
+    # Note: Replication must be configured manually after first start
+    # See README.md for setup instructions
+
+  postgres-standby2:
+    image: postgres:15
+    container_name: postgres-standby2
+    hostname: postgres-standby2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - standby2-data:/var/lib/postgresql/data
+    depends_on:
+      postgres-primary:
+        condition: service_healthy
+    networks:
+      - postgres-network
+    # Note: Second standby - Replication configured in Scenario 07
+
+volumes:
+  primary-data:
+    driver: local
+  standby-data:
+    driver: local
+  standby2-data:
+    driver: local
+
+networks:
+  postgres-network:
+    driver: bridge
