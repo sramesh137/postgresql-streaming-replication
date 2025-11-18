@@ -6,18 +6,18 @@
 
 ## 📚 Table of Contents
 
-1. [What is Barman?](#what-is-barman)
-2. [Why Barman vs pg_basebackup?](#why-barman-vs-pg_basebackup)
-3. [Architecture and Components](#architecture-and-components)
-4. [Installation and Setup](#installation-and-setup)
-5. [Configuration](#configuration)
-6. [Backup Operations](#backup-operations)
-7. [WAL Archiving](#wal-archiving)
-8. [Point-in-Time Recovery (PITR)](#point-in-time-recovery-pitr)
-9. [Incremental Backups](#incremental-backups)
-10. [Monitoring and Maintenance](#monitoring-and-maintenance)
-11. [Interview Questions](#interview-questions)
-12. [Hands-on Scenarios](#hands-on-scenarios)
+1. [What is Barman?](#-what-is-barman)
+2. [Why Barman vs pg_basebackup?](#-why-barman-vs-pg_basebackup)
+3. [Architecture and Components](#️-architecture-and-components)
+4. [Installation and Setup](#-installation-and-setup)
+5. [Configuration](#️-configuration)
+6. [Backup Operations](#-backup-operations)
+7. [WAL Archiving](#-wal-archiving)
+8. [Point-in-Time Recovery (PITR)](#-point-in-time-recovery-pitr)
+9. [Incremental Backups](#-incremental-backups)
+10. [Monitoring and Maintenance](#-monitoring-and-maintenance)
+11. [Interview Questions](#-interview-questions)
+12. [Hands-on Scenarios](#-hands-on-scenarios)
 
 ---
 
