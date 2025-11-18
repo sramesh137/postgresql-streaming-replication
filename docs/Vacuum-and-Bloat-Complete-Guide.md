@@ -6,16 +6,16 @@
 
 ## 📚 Table of Contents
 
-1. [Understanding MVCC](#understanding-mvcc)
-2. [What is VACUUM?](#what-is-vacuum)
-3. [VACUUM vs VACUUM FULL](#vacuum-vs-vacuum-full)
-4. [Autovacuum](#autovacuum)
-5. [Table and Index Bloat](#table-and-index-bloat)
-6. [Monitoring and Detection](#monitoring-and-detection)
-7. [Tuning and Best Practices](#tuning-and-best-practices)
-8. [Troubleshooting](#troubleshooting)
-9. [Interview Questions](#interview-questions)
-10. [Hands-on Scenarios](#hands-on-scenarios)
+1. [Understanding MVCC](#-understanding-mvcc)
+2. [What is VACUUM?](#-what-is-vacuum)
+3. [VACUUM vs VACUUM FULL](#-vacuum-vs-vacuum-full)
+4. [Autovacuum](#-autovacuum)
+5. [Table and Index Bloat](#-table-and-index-bloat)
+6. [Monitoring and Detection](#-monitoring-and-detection)
+7. [Tuning and Best Practices](#-tuning-and-best-practices)
+8. [Troubleshooting](#-troubleshooting)
+9. [Interview Questions](#-interview-questions)
+10. [Hands-on Scenarios](#-hands-on-scenarios)
 
 ---
 
