@@ -6,14 +6,14 @@
 
 ## 📚 Table of Contents
 
-1. [Core Concepts](#core-concepts)
-2. [Common Interview Questions & Answers](#common-interview-questions--answers)
-3. [Architecture Patterns](#architecture-patterns)
-4. [Tool Comparison Matrix](#tool-comparison-matrix)
-5. [Real-World Scenarios](#real-world-scenarios)
-6. [Red Flags to Avoid](#red-flags-to-avoid)
-7. [Advanced Topics](#advanced-topics)
-8. [MySQL Equivalents](#mysql-equivalents)
+1. [Core Concepts](#-core-concepts)
+2. [Common Interview Questions & Answers](#-common-interview-questions--answers)
+3. [Architecture Patterns](#-architecture-patterns)
+4. [Tool Comparison Matrix](#-tool-comparison-matrix)
+5. [Real-World Scenarios](#-real-world-scenarios)
+6. [Red Flags to Avoid](#-red-flags-to-avoid)
+7. [Advanced Topics](#-advanced-topics)
+8. [MySQL Equivalents](#-mysql-equivalents)
 
 ---
 
